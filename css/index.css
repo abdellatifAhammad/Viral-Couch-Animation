@@ -1,0 +1,301 @@
+@charset "UTF-8";
+/*
+Template Name: Abdellatif Ahammad - CSS Template
+Version: 1.0
+Author: Abdellatif Ahammad (zero_this). 
+
+
+*/
+/*  Google fonts  : Poppins , Playfair  */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+/*=================================================================*/
+/*                      BASE                              
+/*=================================================================*/
+
+:root {
+    --primary-bg-color: #F25050;
+    --primary-text-color: white;
+    --body-bg-color: #FEF2F2;
+    --bg-warning: #FEB12E;
+    --bg-success: #20BF43;
+    --bg-danger: #F25050;
+    --button-bg-color: #F25050;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0 !important;
+    overflow: auto !important;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0px 5%;
+    background-color: #E7E7E7;
+}
+
+img {
+    max-width: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.justify-center {
+    justify-content: center;
+    align-items: center;
+}
+
+
+li {
+    list-style: none;
+}
+
+/*=================================================================*/
+/*                      TYPOGRAPHY                              
+/*=================================================================*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary-text-color);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 62px;
+    line-height: 80px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+}
+
+blockquote {
+    padding: 20px 20px;
+    margin: 0 0 20px;
+    font-size: 16px;
+    background: #F7F7F7;
+    border-radius: 10px;
+}
+
+blockquote p {
+    line-height: 1.6;
+}
+
+p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: #3e3e46;
+    line-height: 30px;
+}
+
+
+/*=================================================================*/
+/*                      TYPOGRAPHY                              
+/*=================================================================*/
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    /* background-color: #7a7a7a; */
+}
+
+
+.box {
+
+    background-color: #FBFDFF;
+    width: 100%;
+    height: 90vh;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-half{
+    width: 50%;
+}
+
+
+.shape {
+    position: absolute;
+    top: -5%;
+    left: -15%;
+    width: 50%;
+}
+
+#stop-1{
+    animation: change-color-1 7s infinite linear;
+}
+
+#stop-2{
+    animation: change-color-2 7s infinite linear;
+}
+
+.product{
+    animation: spin 7s infinite cubic-bezier(0, 0, 0.2, 1);
+}
+
+.product-img {
+    position: relative;
+    width: 80%;
+    z-index: 1;
+    right: -25%;
+}
+
+.product-img-ball-1 {
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: 30%;
+}
+
+.product-img-ball-2 {
+    width: 25%;
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+    z-index: 10;
+}
+
+.product-title {
+    position: absolute;
+    top: 18%;
+    left: 5%;
+    width: 140px;
+    text-align: center;
+    padding: 0px 20px;
+    /* border: 2px white solid; */
+}
+
+.content{
+    padding: 5%;
+}
+
+.product-subtitle{
+    font-family: 'Nunito';
+    color: #3e3e46;
+    position: relative;
+    margin-top: 5%;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+
+table{
+    width: 100%;
+    text-align: left;
+    padding-top: 20px;
+    border: none;
+    font-family: 'Nunito';
+}
+
+th{
+    font-weight: 500;
+    font-family: 'Nunito';
+    text-transform: uppercase;
+    color: gray;
+    padding: 20px 0px;
+}
+
+
+td{
+    padding: 20px 0px;
+}
+
+
+tr:nth-child(2n){
+    background-color: #EFECF0;
+}
+
+
+
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: -100px;
+    }
+    50%{
+        transform: rotate(10deg);
+        transform-origin: -100px;
+    }
+    100%{
+        transform: rotate(360deg);
+        transform-origin: -100px;        
+    }
+}
+
+@keyframes change-color-1 {
+    0%{
+        stop-color: #F09A50;
+    }
+    50%{
+        stop-color: #57EEE8;
+    }
+    100%{
+        stop-color: #F09A50;        
+    }
+}
+
+@keyframes change-color-2 {
+    0%{
+        stop-color: #FDE56D;
+    }
+    50%{
+        stop-color: #5AF1D8;
+    }
+    100%{
+        stop-color: #FDE56D;        
+    }
+}
