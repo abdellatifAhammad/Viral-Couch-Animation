@@ -212,10 +212,17 @@ p {
     position: absolute;
     top: 18%;
     left: 5%;
-    width: 140px;
+    width: 120px;
     text-align: center;
     padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
     /* border: 2px white solid; */
+}
+
+.product-title h1{
+    /* animation: slide 7s infinite linear; */
 }
 
 .content{
@@ -226,8 +233,8 @@ p {
     font-family: 'Nunito';
     color: #3e3e46;
     position: relative;
-    margin-top: 5%;
-    font-weight: 400;
+    margin-top: 3%;
+    font-weight: 300;
     font-size: 40px;
 }
 
@@ -250,12 +257,131 @@ th{
 
 
 td{
-    padding: 20px 0px;
+    padding: 20px 10px;
 }
 
 
 tr:nth-child(2n){
     background-color: #EFECF0;
+}
+
+
+.phases{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    /* margin: 80px 5%; */
+    bottom: 20px;
+    left: 20px;
+    position: absolute;
+}
+
+
+.active-phase-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DDE0E1;
+    cursor: pointer;
+}
+
+
+.active-phase-btn ion-icon{
+    font-size: 22px;
+}
+
+.phase-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 30px;
+    position: relative;
+    /* background-color: #20BF43; */
+}
+
+
+.phase-btn::before{
+    content: "";
+    position: absolute;
+    left:-30px;
+    height: 1.7px;
+    width: 20px;
+    background-color: gray;
+    margin: 10px;
+}
+
+
+.phase-btn ion-icon{
+    color: gray;
+    font-size: 22px;
+}
+
+
+.menu-btn{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: #DDE0E1;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+
+.menu-btn ion-icon{
+    font-size: 22px;
+    color: rgb(58, 59, 80);
+}
+
+
+.options{
+    background-color: white;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    width: 180px;
+    justify-content: space-between;
+    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.15);
+    border-radius: 40px;
+    position: absolute;
+    bottom: 40px;
+}
+
+.v-line{
+    width: 1px;
+    height: 40px;
+    background-color: #3e3e46;
+    border-radius: 10px;
+}
+
+.option-btn ion-icon{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.next-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    background: #3e3e46;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 
@@ -266,7 +392,7 @@ tr:nth-child(2n){
         transform: rotate(0deg);
         transform-origin: -100px;
     }
-    50%{
+    60%{
         transform: rotate(10deg);
         transform-origin: -100px;
     }
@@ -299,3 +425,4 @@ tr:nth-child(2n){
         stop-color: #FDE56D;        
     }
 }
+
