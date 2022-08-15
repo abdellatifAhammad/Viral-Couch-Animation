@@ -7,9 +7,7 @@ Author: Abdellatif Ahammad (zero_this).
 
 */
 /*  Google fonts  : Poppins , Playfair  */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 /*=================================================================*/
 /*                      BASE                              
 /*=================================================================*/
@@ -162,28 +160,32 @@ p {
     justify-content: space-between;
 }
 
-.row-half{
+.row-half {
     width: 50%;
 }
 
 
 .shape {
     position: absolute;
-    top: -5%;
-    left: -15%;
-    width: 50%;
+    top: -50%;
+    left: -25%;
+    width: 64%;
+    animation: rotate-shape 5s infinite ;
+}
+svg{
+    max-width: 100%;
 }
 
-#stop-1{
-    animation: change-color-1 7s infinite linear;
+#stop-1 {
+    animation: change-color-1 5s infinite linear;
 }
 
-#stop-2{
-    animation: change-color-2 7s infinite linear;
+#stop-2 {
+    animation: change-color-2 5s infinite linear;
 }
 
-.product{
-    animation: spin 7s infinite cubic-bezier(0, 0, 0.2, 1);
+.product {
+    animation: spin 5s infinite cubic-bezier(0, 0, 0.2, 1);
 }
 
 .product-img {
@@ -221,16 +223,17 @@ p {
     /* border: 2px white solid; */
 }
 
-.product-title h1{
+.product-title h1 {
     /* animation: slide 7s infinite linear; */
 }
 
-.content{
-    padding: 5%;
+.content {
+    padding-top: 5%;
+    width: 50%;
 }
 
-.product-subtitle{
-    font-family: 'Nunito';
+.product-subtitle {
+    font-family: 'Montserrat';
     color: #3e3e46;
     position: relative;
     margin-top: 3%;
@@ -239,45 +242,44 @@ p {
 }
 
 
-table{
+table {
     width: 100%;
     text-align: left;
     padding-top: 20px;
     border: none;
-    font-family: 'Nunito';
+    font-family: 'Montserrat';
 }
 
-th{
+th {
     font-weight: 500;
-    font-family: 'Nunito';
+    font-family: 'Montserrat';
     text-transform: uppercase;
     color: gray;
     padding: 20px 0px;
 }
 
 
-td{
+td {
     padding: 20px 10px;
 }
 
 
-tr:nth-child(2n){
+tr:nth-child(2n) {
     background-color: #EFECF0;
 }
 
 
-.phases{
+.phases {
     display: flex;
     align-items: center;
     background-color: white;
-    /* margin: 80px 5%; */
     bottom: 20px;
     left: 20px;
     position: absolute;
 }
 
 
-.active-phase-btn{
+.active-phase-btn {
     width: 50px;
     height: 50px;
     border-radius: 15px;
@@ -290,11 +292,11 @@ tr:nth-child(2n){
 }
 
 
-.active-phase-btn ion-icon{
+.active-phase-btn ion-icon {
     font-size: 22px;
 }
 
-.phase-btn{
+.phase-btn {
     width: 50px;
     height: 50px;
     border-radius: 15px;
@@ -309,10 +311,10 @@ tr:nth-child(2n){
 }
 
 
-.phase-btn::before{
+.phase-btn::before {
     content: "";
     position: absolute;
-    left:-30px;
+    left: -30px;
     height: 1.7px;
     width: 20px;
     background-color: gray;
@@ -320,13 +322,13 @@ tr:nth-child(2n){
 }
 
 
-.phase-btn ion-icon{
+.phase-btn ion-icon {
     color: gray;
     font-size: 22px;
 }
 
 
-.menu-btn{
+.menu-btn {
     width: 50px;
     height: 50px;
     display: flex;
@@ -341,38 +343,46 @@ tr:nth-child(2n){
 }
 
 
-.menu-btn ion-icon{
+.menu-btn ion-icon {
     font-size: 22px;
     color: rgb(58, 59, 80);
 }
 
 
-.options{
+.options {
     background-color: white;
-    padding: 10px 30px;
+    padding: 16px 30px;
     display: flex;
     align-items: center;
-    width: 180px;
+    /* width: 180px; */
     justify-content: space-between;
     box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.15);
-    border-radius: 40px;
+    border-radius: 80px;
     position: absolute;
     bottom: 40px;
+    left: 40%;
 }
 
-.v-line{
+.v-line {
     width: 1px;
     height: 40px;
     background-color: #3e3e46;
     border-radius: 10px;
+    margin: 0px 15px;
 }
 
-.option-btn ion-icon{
-    font-size: 20px;
+
+.option-btn {
+    margin: 0px 15px;
+}
+
+.option-btn ion-icon {
+    font-size: 22px;
+    font-weight: 500;
     cursor: pointer;
 }
 
-.next-btn{
+.next-btn {
     width: 50px;
     height: 50px;
     border-radius: 15px;
@@ -382,47 +392,207 @@ tr:nth-child(2n){
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    margin: 0px 15px;
 }
 
+
+.table {
+    width: 100%;
+}
+
+.tbody {
+    width: 100%;
+    /* position: relative; */
+}
+
+
+
+.thead {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trow:nth-child(n) {
+    margin: 20px 0px;
+    display: flex;
+    width: 100%;
+    background-color: #F5F3F6;
+}
+
+.trow:nth-child(2n) {
+    margin: 20px 0px;
+    display: flex;
+    width: 100%;
+    background-color: white;
+}
+
+.trow:nth-child(n)::before {
+    content: '';
+    background-color: #F5F3F6;
+    width: 50%;
+    height: 60px;
+    position: absolute;
+    transform: translateX(-100%);
+}
+
+.trow:nth-child(2n)::before {
+    content: '';
+    background-color: white;
+}
+
+.trows-container {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    animation: slide-row 5s infinite linear;
+}
+
+
+.trow-40 {
+    width: 46%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 19px;
+}
+
+
+.trow-20 {
+    width: 26%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+
+.trow-action {
+    width: 26%;
+    height: 60px;
+    text-align: center;
+    line-height: 70px;
+}
 
 
 
 @keyframes spin {
-    0%{
+    0% {
         transform: rotate(0deg);
-        transform-origin: -100px;
+        transform-origin: left;
     }
-    60%{
+
+    25% {
         transform: rotate(10deg);
-        transform-origin: -100px;
+        transform-origin: left;
     }
-    100%{
+
+    30% {
+        transform: rotate(90deg);
+        transform-origin: left;
+    }
+    45% {
+        transform: rotate(180deg);
+        transform-origin: left;
+    }
+    55% {
+        transform: rotate(270deg);
+        transform-origin: left;
+
+    }
+    70% {
         transform: rotate(360deg);
-        transform-origin: -100px;        
+        transform-origin: left;
+
+    }
+    75% {
+        transform: rotate(360deg);
+        transform-origin: left;
+    }
+    
+}
+
+
+@keyframes rotate-shape {
+
+    25% {
+        transform: rotate(0deg);
+    }
+
+    30% {
+        transform: rotate(45deg);
+    }
+    45% {
+        transform: rotate(45deg);
+
+    }
+    55% {
+        transform: rotate(90deg);
+
+    }
+    70% {
+        transform: rotate(90deg);
+
+    }
+    75% {
+        transform: rotate(180deg);
     }
 }
 
+
 @keyframes change-color-1 {
-    0%{
+    0% {
         stop-color: #F09A50;
     }
-    50%{
+
+    50% {
         stop-color: #57EEE8;
     }
-    100%{
-        stop-color: #F09A50;        
+
+    100% {
+        stop-color: #F09A50;
     }
 }
 
 @keyframes change-color-2 {
-    0%{
+    0% {
         stop-color: #FDE56D;
     }
-    50%{
+
+    50% {
         stop-color: #5AF1D8;
     }
-    100%{
-        stop-color: #FDE56D;        
+
+    100% {
+        stop-color: #FDE56D;
     }
 }
 
+@keyframes slide-row {
+    0% {
+        transform: translateX(0px);
+    }
+
+    25% {
+        transform: translateX(0px);
+    }
+
+    30% {
+        transform: translateX(-586px);
+    }
+
+    45% {
+        transform: translateX(-586px);
+    }
+
+    55% {
+        transform: translateX(-1172px);
+    }
+
+    70% {
+        transform: translateX(-1172px);
+    }
+
+    75% {
+        transform: translateX(-0px);
+    }
+}
