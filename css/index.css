@@ -164,13 +164,12 @@ p {
     width: 50%;
 }
 
-
 .shape {
     position: absolute;
     top: -50%;
     left: -25%;
     width: 64%;
-    animation: rotate-shape 5s infinite ;
+    animation: rotate-shape 5s infinite linear ;
 }
 svg{
     max-width: 100%;
@@ -185,7 +184,8 @@ svg{
 }
 
 .product {
-    animation: spin 5s infinite cubic-bezier(0, 0, 0.2, 1);
+    /* animation: spin 5s infinite cubic-bezier(0, 0, 0.2, 1); */
+    display: none;
 }
 
 .product-img {
@@ -214,7 +214,7 @@ svg{
     position: absolute;
     top: 18%;
     left: 5%;
-    width: 120px;
+    max-width: 120px;
     text-align: center;
     padding: 0px 20px;
     display: flex;
@@ -223,8 +223,10 @@ svg{
     /* border: 2px white solid; */
 }
 
+
 .product-title h1 {
-    /* animation: slide 7s infinite linear; */
+    margin-right:20px;
+    animation: text-slide 5s infinite linear;
 }
 
 .content {
@@ -446,7 +448,7 @@ tr:nth-child(2n) {
     width: 100%;
     display: flex;
     overflow: hidden;
-    animation: slide-row 5s infinite linear;
+    /* animation: slide-row 5s infinite linear; */
 }
 
 
@@ -511,61 +513,118 @@ tr:nth-child(2n) {
     
 }
 
-
 @keyframes rotate-shape {
+    /* 23 -> 23+120 -> 240+23 -> 23 */
+    /* 100%/3 = 33.3% start from 0% going to 100% :0 -> 33.3 -> 66.6 -> 100% */
+    /* in total we have 5s : 0.5s  = 10% */
+    /* first stop after changing is 0+20 =20 , 33.33+20 = 53.33 , 66.66+20 = 86.66 */
+    /*  3stops*0.5s = 3s , left time for animation is 2s (not enaugh)  */
+    /* hahhah another error is not start + percentege it's the opposite  */
+    /* first stop after changing is 33.33-10 =23.33 , 66.66-10 = 56.66 , 100-10 = 90 */
 
-    25% {
+    /* NOTIC : the correct degre for the new shape is 60" */
+    0%{
         transform: rotate(0deg);
     }
-
-    30% {
-        transform: rotate(45deg);
+    23.33%{
+        transform: rotate(0deg);
     }
-    45% {
-        transform: rotate(45deg);
-
+    33.3%{
+        transform: rotate(60deg);        
     }
-    55% {
-        transform: rotate(90deg);
-
+    56.66%{
+        transform: rotate(60deg);   
     }
-    70% {
-        transform: rotate(90deg);
-
+    66.6%{
+        transform: rotate(120deg);
     }
-    75% {
+    90%{
+        transform: rotate(120deg);
+    }
+    100%{
         transform: rotate(180deg);
     }
 }
 
 
 @keyframes change-color-1 {
+    /* we have 3 colors  : 100/3 = 0.33 */
+    /* so : from 0 to 100% is : 0% 33.33% 66.66% 100% */
     0% {
         stop-color: #F09A50;
     }
-
-    50% {
-        stop-color: #57EEE8;
-    }
-
-    100% {
+    23.33%{
         stop-color: #F09A50;
+    }
+    33.3% {
+        stop-color: #5BF2CC;
+    }
+    56.66%{
+        stop-color: #5BF2CC;
+    }
+    66.66%{
+        stop-color: #6F63C0;
+    }
+    90%{
+        stop-color: #6F63C0;
+    }
+    100%{
+        stop-color: #d6a954;
     }
 }
 
 @keyframes change-color-2 {
     0% {
-        stop-color: #FDE56D;
+        stop-color: #FDE36C;
     }
-
-    50% {
-        stop-color: #5AF1D8;
+    23.33%{
+        stop-color: #FDE36C;
     }
-
+    33.33% {
+        stop-color: #57EFEA;
+    }
+    56.66%{
+        stop-color: #57EFEA;
+    }
+    66.66%{
+        stop-color: #A689F3;
+    }
+    90%{
+        stop-color: #A689F3;
+    }
     100% {
-        stop-color: #FDE56D;
+        stop-color: #f1de7d;
     }
 }
+
+
+@keyframes text-slide {
+    0% {
+        transform: translateX(0px);
+    }
+    3%{
+        transform: translateX(-170px);
+    }
+    23.33%{
+        transform: translateX(-170px);
+    }
+    33.33% {
+        transform: translateX(-340px);
+    }
+    56.66%{
+        transform: translateX(-340px);
+    }
+    66.66%{
+        transform: translateX(-520px);
+    }
+    90%{
+        transform: translateX(-520px);
+    }
+    100% {
+        transform: translateX(-520px);
+    }
+}
+
 
 @keyframes slide-row {
     0% {
