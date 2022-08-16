@@ -12,7 +12,7 @@
 <body>
     <main class="container">
         <div class="box">
-            <div class="row-half" style="z-index: 10;">
+            <div class="row-half" style="z-index: 5;">
                 <div>
                     <div class="shape">
                         <svg viewBox="0 0 893 922" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,179 +59,188 @@
             <div class="content ">
                 <h3 class="product-subtitle">My <br> storehouse</h3>
 
-
-                <div class="table">
-                    <div class="thead">
-                        <p style="width: 40%;">Product</p>
-                        <p style="width: 20%;"></p>
-                        <p style="width: 20%;"></p>
-                        <p style="width: 20%; text-align: center;">No</p>
+                <!-- thead -->
+                <div class="thead">
+                    <p>Product</p>
+                    <div style="padding: 0px 20px ;text-align: center;">
+                        <p>NO</p>
                     </div>
-                    <div class="tbody-container" style="display: flex;width:100%;overflow: hidden;">
-                        <div class="tbody">
+                </div>
 
-                            <!-- <div class="trow">
-                                <div style="display: flex;">
-                                    <div class="trows-container">
-                                        <div class="row-animate" style="width: 570px;overflow: hidden; display:flex">
-                                            <div class="trow-40">Purifier O2</div>
-                                            <div class="trow-20">110 X 110</div>
-                                            <div class="trow-20">image</div>
-                                        </div>
-                                        <div class="trow-action">
-                                            <ion-icon name="add-outline"></ion-icon>
-                                        </div>
-                                    </div>
-                                    <div class="trows-container">
-                                        <div class="row-animate" style="width: 570px;overflow: hidden; display:flex">
-                                            <div class="trow-40">TEST O2</div>
-                                            <div class="trow-20">110 X 110</div>
-                                            <div class="trow-20">image</div>
-                                        </div>
-                                        <div class="trow-action">
-                                            <ion-icon name="add-outline"></ion-icon>
-                                        </div>
-                                    </div>
-                                    <div class="trows-container">
-                                        <div class="row-animate" style="width: 570px;overflow: hidden; display:flex">
-                                            <div class="trow-40">Teststss O2</div>
-                                            <div class="trow-20">110 X 110</div>
-                                            <div class="trow-20">image</div>
-                                        </div>
-                                        <div class="trow-action">
-                                            <ion-icon name="add-outline"></ion-icon>
-                                        </div>
-                                    </div>
+                <!-- tbody -->
+
+                <div style="width: 100%;display: flex;justify-content: space-between;">
+
+                    <!-- 90% for the changes -->
+                    <div style="width: 90%;;overflow: hidden;">
+                        <div style="height: 70px;width: 100%;display: flex;position: relative;">
+                            <div style="height: 70px;width: 100%;position: absolute;animation: slide-row 6s infinite linear;display: flex;align-items: center;">
+                                <p style="width: 40%;">Purifier O2</p>
+                                <p style="width: 30%;">110 X 100</p>
+                                <div style="width: 20%;display: flex;justify-content: center;" >
+                                    <img style="width: 20px;" src="./assets/img/purifier.png" alt="pods">
                                 </div>
                             </div>
-
-                            <div class="trow">
-                                <div style="display: flex;">
-                                    <div class="trows-container">
-                                        <div class="row-animate" style="width: 570px;overflow: hidden; display:flex">
-                                            <div class="trow-40">Purifier O2</div>
-                                            <div class="trow-20">110 X 110</div>
-                                            <div class="trow-20">image</div>
-                                        </div>
-                                        <div class="trow-action">
-                                            <ion-icon name="add-outline"></ion-icon>
-                                        </div>
-                                    </div>
-                                    <div class="trows-container">
-                                        <div class="row-animate" style="width: 570px;overflow: hidden; display:flex">
-                                            <div class="trow-40">TEST O2</div>
-                                            <div class="trow-20">110 X 110</div>
-                                            <div class="trow-20">image</div>
-                                        </div>
-                                        <div class="trow-action">
-                                            <ion-icon name="add-outline"></ion-icon>
-                                        </div>
-                                    </div>
-                                    <div class="trows-container">
-                                        <div class="row-animate" style="width: 570px;overflow: hidden; display:flex">
-                                            <div class="trow-40">Teststss O2</div>
-                                            <div class="trow-20">110 X 110</div>
-                                            <div class="trow-20">image</div>
-                                        </div>
-                                        <div class="trow-action">
-                                            <ion-icon name="add-outline"></ion-icon>
-                                        </div>
-                                    </div>
+                            <!-- 1 -->
+                            <div style="height: 70px;width: 100%;position: absolute;left:100%;animation: slide-row 6s infinite linear;display: flex;align-items: center;">
+                                <p style="width: 40%;">Purifier O2</p>
+                                <p style="width: 30%;">110 X 100</p>
+                                <div style="width: 30%;display: flex;justify-content: center;" >
+                                    <img style="width: 60px;" src="./assets/img/purifier.png" alt="pods">
                                 </div>
                             </div>
-
-                            <div class="trow">
-                                <div style="display: flex;">
-                                    <div class="trows-container">
-                                        <div class="row-animate" style="width: 570px;overflow: hidden; display:flex">
-                                            <div class="trow-40">Purifier O2</div>
-                                            <div class="trow-20">110 X 110</div>
-                                            <div class="trow-20">image</div>
-                                        </div>
-                                        <div class="trow-action">
-                                            <ion-icon name="add-outline"></ion-icon>
-                                        </div>
-                                    </div>
-                                    <div class="trows-container">
-                                        <div class="row-animate" style="width: 570px;overflow: hidden; display:flex">
-                                            <div class="trow-40">TEST O2</div>
-                                            <div class="trow-20">110 X 110</div>
-                                            <div class="trow-20">image</div>
-                                        </div>
-                                        <div class="trow-action">
-                                            <ion-icon name="add-outline"></ion-icon>
-                                        </div>
-                                    </div>
-                                    <div class="trows-container">
-                                        <div class="row-animate" style="width: 570px;overflow: hidden; display:flex">
-                                            <div class="trow-40">Teststss O2</div>
-                                            <div class="trow-20">110 X 110</div>
-                                            <div class="trow-20">image</div>
-                                        </div>
-                                        <div class="trow-action">
-                                            <ion-icon name="add-outline"></ion-icon>
-                                        </div>
-                                    </div>
+                            <!-- 2 -->
+                            <div style="height: 70px;width: 100%;position: absolute;left:200%;animation: slide-row 6s infinite linear;display: flex;align-items: center;">
+                                <p style="width: 40%;">Herbs Pod</p>
+                                <p style="width: 30%;">110 X 100</p>
+                                <div style="width: 30%;display: flex;justify-content: center;" >
+                                    <img style="width: 25px;" src="./assets/img/herbs_pod.png" alt="pods">
                                 </div>
-                            </div> -->
-                            
+                            </div>
+                            <!-- 3 -->
+                            <div style="height: 70px;width: 100%;position: absolute;left:300%;animation: slide-row 6s infinite linear;display: flex;align-items: center;">
+                                <p style="width: 40%;">Worktop</p>
+                                <p style="width: 30%;">110 X 100</p>
+                                <div style="width: 30%;display: flex;justify-content: center;">
+                                    <img style="width: 50px;" src="./assets/img/teniss.png" alt="pods">
+                                </div>
+                            </div>
                         </div>
+
                     </div>
+
+                    <!-- 10% -->
+
+                    <div style="width: 10%; height: 70px;display: flex;justify-content: center;align-items: center;">
+                        <ion-icon style="font-size: 22px;" name="add-outline"></ion-icon>
+                    </div>
+
                 </div>
 
-                <!-- <table border="0" cellspacing="0">
-                    <tr>
-                        <th>Product</th>
-                        <th></th>
-                        <th></th>
-                        <th>No</th>
-                    </tr>
-                    <tr>
-                        <td>Purifier O2</td>
-                        <td>110 X 110</td>
-                        <td>image</td>
-                        <td>
-                            <ion-icon name="add-outline"></ion-icon>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Copse combo</td>
-                        <td>110 X 110</td>
-                        <td>image</td>
-                        <td>
-                            <ion-icon name="add-outline"></ion-icon>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Bouncy prop</td>
-                        <td>110 X 110</td>
-                        <td>image</td>
-                        <td>
-                            <ion-icon name="add-outline"></ion-icon>
-                        </td>
-                    </tr>
-                </table> -->
+                <!-- row 2 -->
 
-                <div class="menu-btn">
-                    <ion-icon name="grid-outline"></ion-icon>
+                <div style="width: 100%;display: flex;justify-content: space-between;">
+
+                    <!-- 90% for the changes -->
+                    <div style="width: 90%;;overflow: hidden;">
+                        <div style="height: 70px;width: 100%;display: flex;position: relative;">
+                            <div style="height: 70px;width: 100%;position: absolute;animation: slide-row 6s infinite linear;display: flex;align-items: center;">
+                                <p style="width: 40%;">Copse combo</p>
+                                <p style="width: 30%;">110 X 100</p>
+                                <div style="width: 20%;display: flex;justify-content: center;" >
+                                    <img style="width: 80px;" src="./assets/img/chair.png" alt="pods">
+                                </div>
+                            </div>
+                            <!-- 1 -->
+                            <div style="height: 70px;width: 100%;position: absolute;left:100%;animation: slide-row 6s infinite linear;display: flex;align-items: center;">
+                                <p style="width: 40%;">Copse combo</p>
+                                <p style="width: 30%;">110 X 100</p>
+                                <div style="width: 30%;display: flex;justify-content: center;" >
+                                    <img style="width: 80px;" src="./assets/img/chair.png" alt="pods">
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div style="height: 70px;width: 100%;position: absolute;left:200%;animation: slide-row 6s infinite linear;display: flex;align-items: center;">
+                                <p style="width: 40%;">Garden Pack</p>
+                                <p style="width: 30%;">110 X 100</p>
+                                <div style="width: 30%;display: flex;justify-content: center;" >
+                                    <img style="width: 40px;" src="./assets/img/garden_pack.png" alt="pods">
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div style="height: 70px;width: 100%;position: absolute;left:300%;animation: slide-row 6s infinite linear;display: flex;align-items: center;">
+                                <p style="width: 40%;">Choch capsule</p>
+                                <p style="width: 30%;">110 X 100</p>
+                                <div style="width: 30%;display: flex;justify-content: center;">
+                                    <img style="width: 50px;" src="./assets/img/pillow.png" alt="pods">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- 10% -->
+
+                    <div style="width: 10%; height: 70px;display: flex;justify-content: center;align-items: center;">
+                        <ion-icon style="font-size: 22px;" name="add-outline"></ion-icon>
+                    </div>
+
                 </div>
 
-                <div class="options">
-                    <div class="option-btn">
-                        <ion-icon name="color-palette-outline"></ion-icon>
+                <!-- row 3 -->
+
+                <div style="width: 100%;display: flex;justify-content: space-between;">
+
+                    <!-- 90% for the changes -->
+                    <div style="width: 90%;;overflow: hidden;">
+                        <div style="height: 70px;width: 100%;display: flex;position: relative;">
+                            <div style="height: 70px;width: 100%;position: absolute;animation: slide-row 6s infinite linear;display: flex;align-items: center;">
+                                <p style="width: 40%;">Bouncy Prop</p>
+                                <p style="width: 30%;">110 X 100</p>
+                                <div style="width: 20%;display: flex;justify-content: center;">
+                                    <img style="width: 20px;" src="./assets/img/bouncy.png" alt="pods">
+                                </div>
+                            </div>
+                            <!-- 1 -->
+                            <div style="height: 70px;width: 100%;position: absolute;left:100%;animation: slide-row 6s infinite linear;display: flex;align-items: center;">
+                                <p style="width: 40%;">Bouncy Prop</p>
+                                <p style="width: 30%;">110 X 100</p>
+                                <div style="width: 30%;display: flex;justify-content: center;" >
+                                    <img style="width: 60px;" src="./assets/img/bouncy.png" alt="pods">
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div style="height: 70px;width: 100%;position: absolute;left:200%;animation: slide-row 6s infinite linear;display: flex;align-items: center;">
+                                <p style="width: 40%;">Outdoor light</p>
+                                <p style="width: 30%;">110 X 100</p>
+                                <div style="width: 30%;display: flex;justify-content: center;" >
+                                    <img style="width: 45px;" src="./assets/img/outdoor_light.png" alt="pods">
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div style="height: 70px;width: 100%;position: absolute;left:300%;animation: slide-row 6s infinite linear;display: flex;align-items: center;">
+                                <p style="width: 40%;">Couch cake</p>
+                                <p style="width: 30%;">110 X 100</p>
+                                <div style="width: 30%;display: flex;justify-content: center;">
+                                    <img style="width: 55px;" src="./assets/img/sofa_cacke.png" alt="pods">
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="option-btn">
-                        <ion-icon name="code-working-outline"></ion-icon>
+
+                    <!-- 10% -->
+
+                    <div style="width: 10%; height: 70px;display: flex;justify-content: center;align-items: center;">
+                        <ion-icon style="font-size: 22px;" name="add-outline"></ion-icon>
                     </div>
-                    <div class="option-btn">
-                        <ion-icon name="person-outline"></ion-icon>
-                    </div>
-                    <div class="v-line"></div>
-                    <div class="next-btn">
-                        <ion-icon name="arrow-forward-outline"></ion-icon>
-                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="menu-btn">
+                <ion-icon name="grid-outline"></ion-icon>
+            </div>
+
+            <div class="options">
+                <div class="option-btn">
+                    <ion-icon name="color-palette-outline"></ion-icon>
+                </div>
+                <div class="option-btn">
+                    <ion-icon name="code-working-outline"></ion-icon>
+                </div>
+                <div class="option-btn">
+                    <ion-icon name="person-outline"></ion-icon>
+                </div>
+                <div class="v-line"></div>
+                <div class="next-btn">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
                 </div>
             </div>
+        </div>
         </div>
 
     </main>
