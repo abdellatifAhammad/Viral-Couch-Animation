@@ -183,29 +183,96 @@ svg{
     animation: change-color-2 5s infinite linear;
 }
 
-.product {
-    /* animation: spin 5s infinite cubic-bezier(0, 0, 0.2, 1); */
-    display: none;
+.product-1 {
+    /* display: none; */
 }
 
-.product-img {
-    position: relative;
-    width: 80%;
+.product-1-img {
+    position: absolute;
+    height: 350px;
     z-index: 1;
-    right: -25%;
+    top: 90px;
+    left: 15%;
+    animation: product-1-img 5s infinite linear;
 }
+
+.product-2-img {
+    position: absolute;
+    height: 400px;
+    z-index: 1;
+    top: 60px;
+    left: 25%;
+    animation: product-2-img 5s infinite linear;
+}
+
+
+.product-3-img {
+    position: absolute;
+    width: 350px;
+    z-index: 1;
+    top: 150px;
+    left: 19%;
+    animation: product-3-img 5s infinite linear;
+}
+
+
 
 .product-img-ball-1 {
-    width: 20%;
+    width: 100px;
     position: absolute;
     top: 0;
     left: 30%;
 }
 
-.product-img-ball-2 {
-    width: 25%;
+
+.product-1::before{
+    content: "";
+    background-image: url('../assets/img/ball-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 110px;
     position: absolute;
-    bottom: 5%;
+    z-index: 10;
+    left: 25%;
+    animation: product-img-balls 5s infinite linear;
+} 
+
+.product-1::after{
+    content: "";
+    background-image: url('../assets/img/ball-2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    bottom: 20%;
+    z-index: 10;
+    left: 18%;
+    animation: product-img-balls 5s infinite linear;
+} 
+
+
+
+.product-2::after{
+    content: "";
+    background-image: url('../assets/img/cloud.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 204px;
+    height: 168px;
+    position: absolute;
+    bottom: 25%;
+    z-index: 10;
+    left: 15%;
+    animation: product-img-cloud 5s infinite linear;
+}
+
+
+
+.product-img-ball-2 {
+    width: 100px;
+    position: absolute;
     left: 20%;
     z-index: 10;
 }
@@ -543,6 +610,193 @@ tr:nth-child(2n) {
     }
     100%{
         transform: rotate(180deg);
+    }
+}
+
+@keyframes product-1-img {
+    0%{
+        transform: rotate(0deg);
+        transform-origin:  -100px;
+        filter: opacity(1);
+    }
+    23.33%{
+        transform: rotate(10deg);
+        transform-origin:  -100px ;
+        filter: opacity(1);
+    }
+    33.3%{
+        transform: rotate(180deg);
+        transform-origin:  -100px;
+    }
+    56.66%{
+        transform: rotate(180deg);
+        transform-origin:  -100px;
+        filter: opacity(0);
+    }
+    66.6%{
+        transform: rotate(180deg);
+        transform-origin:  -100px;
+        filter: opacity(0);
+    }
+    90%{
+        transform: rotate(180deg);
+        transform-origin:  -100px;
+        filter: opacity(0);
+    }
+    100%{
+        transform: rotate(360deg);
+        transform-origin:  -100px;
+    }
+}
+
+@keyframes product-2-img {
+    0%{
+        transform: rotate(0deg);
+        transform-origin:  -200px;
+        filter: opacity(0);
+    }
+    23.33%{
+        transform: rotate(-360deg);
+        transform-origin:  -200px ;
+        filter: opacity(0);
+    }
+    33.3%{
+        transform: rotate(0deg);
+        transform-origin:  -200px;
+        filter: opacity(1);
+    }
+    56.66%{
+        transform: rotate(10deg);
+        transform-origin:  -200px;
+        filter: opacity(1);
+    }
+    66.6%{
+        transform: rotate(180deg);
+        transform-origin:  -200px;
+        filter: opacity(0);
+    }
+    90%{
+        transform: rotate(180deg);
+        transform-origin:  -200px;
+        filter: opacity(0);
+    }
+    100%{
+        transform: rotate(360deg);
+        transform-origin: -200px;
+        filter: opacity(0);
+    }
+}
+
+
+@keyframes product-3-img {
+    0%{
+        transform: rotate(0deg);
+        transform-origin:  -200px;
+        filter: opacity(0);
+    }
+    23.33%{
+        transform: rotate(-360deg);
+        transform-origin:  -200px ;
+        filter: opacity(0);
+    }
+    33.3%{
+        transform: rotate(-360deg);
+        transform-origin:  -200px;
+        filter: opacity(0);
+    }
+    56.66%{
+        transform: rotate(-360deg);
+        transform-origin:  -200px;
+        filter: opacity(0);
+    }
+    66.6%{
+        transform: rotate(0deg);
+        transform-origin:  -200px;
+        filter: opacity(1);
+    }
+    90%{
+        transform: rotate(8deg);
+        transform-origin:  -200px;
+        filter: opacity(1);
+    }
+    100%{
+        transform: rotate(360deg);
+        transform-origin: -200px;
+        filter: opacity(0);
+    }
+}
+
+@keyframes product-img-cloud {
+    0%{
+        transform: rotate(0deg);
+        transform-origin:  -200px;
+        filter: opacity(0);
+    }
+    23.33%{
+        transform: rotate(-360deg);
+        transform-origin:  -200px ;
+        filter: opacity(0);
+    }
+    33.3%{
+        transform: rotate(0deg);
+        transform-origin:  -200px;
+        filter: opacity(1);
+    }
+    56.66%{
+        transform: rotate(15deg);
+        transform-origin:  -200px;
+        filter: opacity(1);
+    }
+    66.6%{
+        transform: rotate(180deg);
+        transform-origin:  -200px;
+        filter: opacity(0);
+    }
+    90%{
+        transform: rotate(180deg);
+        transform-origin:  -200px;
+        filter: opacity(0);
+    }
+    100%{
+        transform: rotate(360deg);
+        transform-origin: top;
+        filter: opacity(0);
+    }
+}
+
+@keyframes product-img-balls {
+    0%{
+        transform: rotate(0deg);
+        transform-origin:  -200px;
+        filter: opacity(1);
+    }
+    23.33%{
+        transform: rotate(10deg);
+        transform-origin:  -200px;
+        filter: opacity(1);
+    }
+    33.3%{
+        transform: rotate(180deg);
+        transform-origin:  -200px;
+    }
+    56.66%{
+        transform: rotate(180deg);
+        transform-origin:  -200px;
+        filter: opacity(0);
+    }
+    66.6%{
+        transform: rotate(180deg);
+        transform-origin:  -200px;
+        filter: opacity(0);
+    }
+    90%{
+        transform: rotate(180deg);
+        transform-origin:  -200px;
+        filter: opacity(0);
+    }
+    100%{
+        transform: rotate(360deg);
+        transform-origin:  -200px;
     }
 }
 
