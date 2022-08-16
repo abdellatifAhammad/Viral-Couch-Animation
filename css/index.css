@@ -152,7 +152,7 @@ p {
 
     background-color: #FBFDFF;
     width: 100%;
-    height: 90vh;
+    height: 620px;
     border-radius: 30px;
     overflow: hidden;
     position: relative;
@@ -168,7 +168,7 @@ p {
     position: absolute;
     top: -50%;
     left: -25%;
-    width: 64%;
+    min-width: 800px;
     animation: rotate-shape 5s infinite linear ;
 }
 svg{
@@ -235,7 +235,7 @@ svg{
     position: absolute;
     z-index: 10;
     left: 25%;
-    animation: product-img-balls 5s infinite linear;
+    animation: product-img-ball-1 5s infinite linear;
 } 
 
 .product-1::after{
@@ -249,7 +249,7 @@ svg{
     bottom: 20%;
     z-index: 10;
     left: 18%;
-    animation: product-img-balls 5s infinite linear;
+    animation: product-img-ball-2 5s infinite linear;
 } 
 
 
@@ -266,6 +266,35 @@ svg{
     z-index: 10;
     left: 15%;
     animation: product-img-cloud 5s infinite linear;
+}
+
+.product-3::before{
+    content: "";
+    background-image: url('../assets/img/pillow.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    z-index: 10;
+    left: 25%;
+    top: 8%;
+    animation: product-img-pillow 5s infinite linear;
+}
+
+
+.product-3::after{
+    content: "";
+    background-image: url('../assets/img/teniss.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 124px;
+    height: 124px;
+    position: absolute;
+    bottom: 25%;
+    z-index: 10;
+    left: 15%;
+    animation: product-img-pillow 5s infinite linear;
 }
 
 
@@ -620,7 +649,7 @@ tr:nth-child(2n) {
         filter: opacity(1);
     }
     23.33%{
-        transform: rotate(10deg);
+        transform: rotate(0deg) translateY(50px);
         transform-origin:  -100px ;
         filter: opacity(1);
     }
@@ -666,7 +695,7 @@ tr:nth-child(2n) {
         filter: opacity(1);
     }
     56.66%{
-        transform: rotate(10deg);
+        transform: rotate(0deg) translateY(50px);
         transform-origin:  -200px;
         filter: opacity(1);
     }
@@ -715,7 +744,7 @@ tr:nth-child(2n) {
         filter: opacity(1);
     }
     90%{
-        transform: rotate(8deg);
+        transform: rotate(0deg) translateY(50px);
         transform-origin:  -200px;
         filter: opacity(1);
     }
@@ -725,6 +754,9 @@ tr:nth-child(2n) {
         filter: opacity(0);
     }
 }
+
+
+
 
 @keyframes product-img-cloud {
     0%{
@@ -743,7 +775,7 @@ tr:nth-child(2n) {
         filter: opacity(1);
     }
     56.66%{
-        transform: rotate(15deg);
+        transform: rotate(0deg) translateY(60px) translateX(-20px);
         transform-origin:  -200px;
         filter: opacity(1);
     }
@@ -764,14 +796,14 @@ tr:nth-child(2n) {
     }
 }
 
-@keyframes product-img-balls {
+@keyframes product-img-ball-1 {
     0%{
         transform: rotate(0deg);
         transform-origin:  -200px;
         filter: opacity(1);
     }
     23.33%{
-        transform: rotate(10deg);
+        transform: rotate(0deg) translateY(60px) translateX(10px);
         transform-origin:  -200px;
         filter: opacity(1);
     }
@@ -797,6 +829,81 @@ tr:nth-child(2n) {
     100%{
         transform: rotate(360deg);
         transform-origin:  -200px;
+    }
+}
+
+@keyframes product-img-ball-2 {
+    0%{
+        transform: rotate(0deg);
+        transform-origin:  -200px;
+        filter: opacity(1);
+    }
+    23.33%{
+        transform: rotate(0deg) translateY(60px) translateX(-10px);
+        transform-origin:  -200px;
+        filter: opacity(1);
+    }
+    33.3%{
+        transform: rotate(180deg);
+        transform-origin:  -200px;
+    }
+    56.66%{
+        transform: rotate(180deg);
+        transform-origin:  -200px;
+        filter: opacity(0);
+    }
+    66.6%{
+        transform: rotate(180deg);
+        transform-origin:  -200px;
+        filter: opacity(0);
+    }
+    90%{
+        transform: rotate(180deg);
+        transform-origin:  -200px;
+        filter: opacity(0);
+    }
+    100%{
+        transform: rotate(360deg);
+        transform-origin:  -200px;
+    }
+}
+
+
+@keyframes product-img-pillow {
+    0%{
+        transform: rotate(0deg);
+        transform-origin:  -200px;
+        filter: opacity(0);
+    }
+    23.33%{
+        transform: rotate(-360deg);
+        transform-origin:  -200px ;
+        filter: opacity(0);
+    }
+    33.3%{
+        transform: rotate(-360deg);
+        transform-origin:  -200px;
+        filter: opacity(0);
+    }
+    56.66%{
+        transform: rotate(-360deg);
+        transform-origin:  -200px;
+        filter: opacity(0);
+    }
+    66.6%{
+        transform: rotate(0deg);
+        transform-origin:  -200px;
+        filter: opacity(1);
+    }
+    90%{
+        transform: rotate(0deg) translateX(10px) translateY(40px);
+        transform-origin:  -200px;
+        filter: opacity(1);
+    }
+    100%{
+        transform: rotate(360deg);
+        transform-origin: -200px;
+        filter: opacity(0);
     }
 }
 
