@@ -169,6 +169,7 @@ p {
     top: -50%;
     left: -25%;
     min-width: 800px;
+    transition: 0.5s all;
     animation: rotate-shape 6s infinite linear;
 }
 
@@ -177,10 +178,12 @@ svg {
 }
 
 #stop-1 {
+    transition: 0.5s all;
     animation: change-color-1 6s infinite linear;
 }
 
 #stop-2 {
+    transition: 0.5s all;
     animation: change-color-2 6s infinite linear;
 }
 
@@ -194,6 +197,7 @@ svg {
     z-index: 1;
     top: 90px;
     left: 15%;
+    transition: 0.5s all;
     animation: product-1-img 6s infinite linear;
 }
 
@@ -203,6 +207,7 @@ svg {
     z-index: 1;
     top: 60px;
     left: 25%;
+    transition: 0.5s all;
     animation: product-2-img 6s infinite linear;
 }
 
@@ -213,6 +218,7 @@ svg {
     z-index: 1;
     top: 150px;
     left: 19%;
+    transition: 0.5s all;
     animation: product-3-img 6s infinite linear;
 }
 
@@ -236,6 +242,7 @@ svg {
     position: absolute;
     z-index: 10;
     left: 25%;
+    transition: 0.5s all;
     animation: product-img-ball-1 6s infinite linear;
 }
 
@@ -250,6 +257,7 @@ svg {
     bottom: 20%;
     z-index: 10;
     left: 18%;
+    transition: 0.5s all;
     animation: product-img-ball-2 6s infinite linear;
 }
 
@@ -266,6 +274,7 @@ svg {
     bottom: 25%;
     z-index: 10;
     left: 15%;
+    transition: 0.5s all;
     animation: product-img-cloud 6s infinite linear;
 }
 
@@ -280,6 +289,7 @@ svg {
     z-index: 10;
     left: 25%;
     top: 8%;
+    transition: 0.5s all;
     animation: product-img-pillow 6s infinite linear;
 }
 
@@ -295,6 +305,7 @@ svg {
     bottom: 25%;
     z-index: 10;
     left: 15%;
+    transition: 0.5s all;
     animation: product-img-pillow 6s infinite linear;
 }
 
@@ -323,6 +334,7 @@ svg {
 
 .product-title h1 {
     margin-right: 20px;
+    transition: 0.5s all;
     animation: text-slide 6s infinite linear;
 }
 
