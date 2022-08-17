@@ -15,11 +15,6 @@ Author: Abdellatif Ahammad (zero_this).
 :root {
     --primary-bg-color: #F25050;
     --primary-text-color: white;
-    --body-bg-color: #FEF2F2;
-    --bg-warning: #FEB12E;
-    --bg-success: #20BF43;
-    --bg-danger: #F25050;
-    --button-bg-color: #F25050;
 }
 
 
@@ -37,7 +32,7 @@ html {
 
 body {
     background-color: var(--body-bg-color);
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -49,38 +44,12 @@ img {
     max-width: 100%;
 }
 
-.relative {
-    position: relative;
-}
-
-.absolute {
-    position: absolute;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-}
-
-.justify-center {
-    justify-content: center;
-    align-items: center;
-}
-
-
-li {
-    list-style: none;
-}
 
 /*=================================================================*/
 /*                      TYPOGRAPHY                              
 /*=================================================================*/
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
     color: var(--primary-text-color);
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -90,18 +59,6 @@ h6 {
 h1 {
     font-size: 62px;
     line-height: 80px;
-}
-
-h2 {
-    font-size: 28px;
-}
-
-h3 {
-    font-size: 24px;
-}
-
-h4 {
-    font-size: 18px;
 }
 
 a {
@@ -144,15 +101,22 @@ p {
     align-items: center;
     height: 100vh;
     width: 100%;
-    /* background-color: #7a7a7a; */
 }
 
+
+.smily-face {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 3%;
+    top: 30px;
+}
 
 .box {
 
     background-color: #FBFDFF;
     width: 100%;
-    height: 620px;
+    height: 90vh;
     border-radius: 30px;
     overflow: hidden;
     position: relative;
@@ -185,10 +149,6 @@ svg {
 #stop-2 {
     transition: 0.5s all;
     animation: change-color-2 6s infinite linear;
-}
-
-.product-1 {
-    /* display: none; */
 }
 
 .product-1-img {
@@ -339,16 +299,16 @@ svg {
 }
 
 .content {
-    padding: 5%;
+    padding: 5% 2%;
     width: 50%;
 }
 
 .product-subtitle {
     font-family: 'Montserrat';
-    color: #3e3e46;
+    color: #020000;
     position: relative;
     margin-top: 3%;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 40px;
 }
 
@@ -522,6 +482,14 @@ tr:nth-child(2n) {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.thead p {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Montserrat';
 }
 
 
@@ -530,8 +498,6 @@ tr:nth-child(2n) {
     display: flex;
     justify-content: space-between;
 }
-
-
 
 
 .t-rows-container {
@@ -561,6 +527,8 @@ tr:nth-child(2n) {
 
 .t-col-1 {
     width: 40%;
+    color: #020000;
+    font-size: 18px;
 }
 
 .t-col-2 {
@@ -568,48 +536,21 @@ tr:nth-child(2n) {
 }
 
 .t-col-3 {
-    width: 30%;display: flex;justify-content: center;
+    width: 30%;
+    display: flex;
+    justify-content: center;
 }
 
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-        transform-origin: left;
-    }
-
-    25% {
-        transform: rotate(10deg);
-        transform-origin: left;
-    }
-
-    30% {
-        transform: rotate(90deg);
-        transform-origin: left;
-    }
-
-    45% {
-        transform: rotate(180deg);
-        transform-origin: left;
-    }
-
-    55% {
-        transform: rotate(270deg);
-        transform-origin: left;
-
-    }
-
-    70% {
-        transform: rotate(360deg);
-        transform-origin: left;
-
-    }
-
-    75% {
-        transform: rotate(360deg);
-        transform-origin: left;
-    }
-
+.action-btn {
+    width: 10%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
+
+
 
 @keyframes rotate-shape {
     /* 23 -> 23+120 -> 240+23 -> 23 */
