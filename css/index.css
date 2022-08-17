@@ -520,26 +520,11 @@ tr:nth-child(2n) {
 
 
 
-.tbody:first-child {
+.tbody {
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: flex;
+    justify-content: space-between;
 }
-
-.tbody:nth-child(2) {
-    width: 100%;
-    position: absolute;
-    left: 115%;
-}
-
-
-.tbody:nth-child(3) {
-    width: 100%;
-    position: absolute;
-    left:230%;
-}
-
 
 
 .t-row {
