@@ -128,7 +128,7 @@ p {
     position: absolute;
     top: -50%;
     left: -25%;
-    min-width: 800px;
+    min-width: 65%;
     transition: 0.5s all;
     animation: rotate-shape 6s infinite linear;
 }
