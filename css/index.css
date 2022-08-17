@@ -3,17 +3,15 @@
 Template Name: Abdellatif Ahammad - CSS Template
 Version: 1.0
 Author: Abdellatif Ahammad (zero_this). 
-
-
 */
-/*  Google fonts  : Poppins , Playfair  */
+/*  Google fonts  : Poppins , Montserrat  */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 /*=================================================================*/
 /*                      BASE                              
 /*=================================================================*/
 
 :root {
-    --primary-bg-color: #F25050;
+    --body-bg-color: #E7E7E7;
     --primary-text-color: white;
 }
 
@@ -37,7 +35,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     padding: 0px 5%;
-    background-color: #E7E7E7;
 }
 
 img {
@@ -113,10 +110,9 @@ p {
 }
 
 .box {
-
     background-color: #FBFDFF;
     width: 100%;
-    height: 90vh;
+    min-height: 620px;
     border-radius: 30px;
     overflow: hidden;
     position: relative;
@@ -136,6 +132,7 @@ p {
     transition: 0.5s all;
     animation: rotate-shape 6s infinite linear;
 }
+
 
 svg {
     max-width: 100%;
