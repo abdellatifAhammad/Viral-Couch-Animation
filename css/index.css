@@ -340,7 +340,6 @@ tr:nth-child(2n) {
 .phases {
     display: flex;
     align-items: center;
-    background-color: white;
     bottom: 20px;
     left: 20px;
     position: absolute;
