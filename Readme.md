@@ -11,7 +11,7 @@
 <br>
 ---
 
- - dribble link for the original prototype : https://dribbble.com/shots/16460483-Cake-Couch
+ - dribbble shot link for the original prototype : https://dribbble.com/shots/16460483-Cake-Couch
  - 🕸 if you want to check the demo :  https://abdellatifahammad.github.io/Viral-Couch-Animation/
 
 
