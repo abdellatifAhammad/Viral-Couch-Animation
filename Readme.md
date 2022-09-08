@@ -1,7 +1,7 @@
 # Viral-Couch-Animation (CSS Only)
 
 
-> the story behind this project is that I saw a video on Instagram and I like this design, after searching I find that it was created by Cosmin Capitanu on dribble, and I decide to try to turn it to code using CSS only, yeah that's it, enjoy it.
+> the story behind this project is that I saw a video on Instagram and I like this design, after searching I find that it was created by Cosmin Capitanu on dribbble, and I decide to try to turn it to code using CSS only, yeah that's it, enjoy it.
 
 <br>
 
