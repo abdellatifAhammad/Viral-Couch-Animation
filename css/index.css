@@ -428,6 +428,7 @@ tr:nth-child(2n) {
     position: absolute;
     bottom: 40px;
     left: 40%;
+    z-index:5;
 }
 
 .v-line {
